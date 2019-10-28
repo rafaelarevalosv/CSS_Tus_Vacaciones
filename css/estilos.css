@@ -1,0 +1,362 @@
+@charset "utf-8";
+@-webkit-keyframes slide{
+  0%{
+    margin-top: 150%;
+    }60%{
+      margin-top: -5%;
+      }100%{
+        margin-top: 0%;
+      }
+    }
+      body{
+        font-family: 'Arial', cursive;
+        -webkit-animation: slide 1s forwards;
+      }
+      div{
+      }
+      h1 {
+        font-family: 'Satisfy', cursive;
+        font-size: 1.2em;
+      }
+      h2{font-family: 'Satisfy', cursive;}
+      h3{font-family: 'Satisfy', cursive;}
+      h4{font-family: 'Satisfy', cursive;}
+      h5{font-family: 'Satisfy', cursive;}
+      h6{font-family: 'Satisfy', cursive;}
+      nav ul{
+        list-style: none;
+      }
+
+      header{
+        background:#f0c808;
+        color: white;
+        border-radius: 10px 10px 0 0;
+        padding: 10px 10px 0px 0px;
+        display: flex;
+        flex-flow: row nowrap;
+      }
+      header h1 {
+        display:inline;
+        padding: 1%;
+        text-shadow: 2px 2px 0 #02010a;
+        font-size: 3vw;
+      }
+
+      nav {
+        display:inline;
+        font-size: 1.3vw;
+        margin-top: 3%;
+        text-align:center;
+      }
+
+      header a {
+        color: white;
+      }
+      nav ul {
+        list-style: none;
+      }
+      nav li {
+        float:left;
+        padding:0px 10px;
+        color:#fff;
+      }
+
+      header nav .active a, header nav a:visited {
+        color:red;
+        text-decoration: none;
+      }
+      header nav a:hover {
+        color:blue;
+        text-decoration: none;
+      }
+
+      .principal {
+        background-image: url("../images/inicial2.JPG");
+        background-size: 100% 100%;
+        margin-top:0px;
+        height:30vw;
+        display:block;
+        padding-top:5%;
+      }
+      .principal > .contenido {
+        background: #CCC;
+        filter: alpha(opacity=90);
+        /* IE */
+        -moz-opacity: 0.9;
+        /* Mozilla */
+        opacity: 0.9;
+        /* CSS3 */
+        min-width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        padding:3%;
+        font-size: 2vw;
+        position:relative;
+      }
+
+      #playa{
+        display:block;
+        background-color: #ff00e3;
+      }
+      #parque
+      {
+        display:block;
+        background-color: #def0dc;
+      }
+      #rio
+      {
+        display:block;
+        background-color: #3fffce;
+      }
+      .lugar{
+        margin-left:3%;
+        margin-right:3%;
+      }
+      .lugar .contenido{
+        display:flex;
+        flex-flow:row nowrap;
+      }
+      .imagen-principal>img{
+        display:flex;
+        float:left;
+        max-width:50%;
+        padding:3%;
+        border-radius: 3vw;
+        transition-property: transform, box-shadow;
+        transition-duration: 1s, 1s;
+      }
+      .imagen-principal img:hover {
+        transform:scale(1.1);
+        -webkit-filter: brightness(120%);
+        filter:brightness(120%);
+      }
+      .descripcion{
+        text-align:center;
+      }
+      .descripcion h2{
+        text-align:center;
+        font-size:3vw;
+      }
+      .descripcion p{
+        text-align:center;
+        font-size:2vw;
+      }
+      .imagen-secundaria>img{
+        display:flex;
+        float:right;
+        max-width:50%;
+        padding:3%;
+        border-radius: 3vw;
+        transition-property: transform, box-shadow;
+        transition-duration: 1s, 1s;
+      }
+      .imagen-secundaria img:hover {
+        transform:scale(1.1);
+        -webkit-filter: brightness(120%);
+        filter:brightness(120%);
+      }
+      footer{
+        display:flex;
+        flex-flow:row no-wrap;
+        margin-left:3%;
+        margin-right:3%;
+        margin-top:1%;
+      }
+      form{
+        display:inline;
+        border:1px;
+        border-color:#33ffcc;
+      }
+      .informacion{
+        display: block;
+        float: left;
+        width: 55%;
+      }
+      .contacto{
+        display: block;
+        text-align:left;
+        border-radius: 3vw;
+        background-color: #fff3cc;
+        float: right;
+        width:50%;
+        padding:2%;
+      }
+      form label[for="email"]{
+        display:block;
+        min-width: 10%;
+      }
+      form input[type="email"] {
+        display:inline;
+        width: 100%;
+      }
+
+      form label[for="descripcion"] {
+        display:block;
+        min-width:10%;
+        vertical-align: top;
+      }
+
+      form textarea {
+        display:inline;
+        width: 100%;
+      }
+      form button{
+        background-color:  #f3d3cc;
+        padding:1%;
+        border-radius: 0.5vw;
+        width:35%;
+      }
+
+
+      @media screen and (max-width: 768px){
+        header{
+          display:block;
+          text-align:center;
+        }
+        header h1 {
+          text-shadow: 2px 2px 0 #02010a;
+          font-size: 6vw;
+          text-align:center;
+          width: 100%;
+        }
+        nav {
+          display: flex;
+          flex-flow: row nowrap;
+        }
+        ul{
+          margin:0;
+          padding:0;
+          width:100%;
+          font-size:4vw;
+          list-style: none;
+        }
+        ul li{
+          display:inline;
+          text-align:center;
+          float:none;
+          padding: 2px;
+        }
+        .principal > .contenido {
+          background: #CCC;
+          filter: alpha(opacity=90);
+          /* IE */
+          -moz-opacity: 0.9;
+          /* Mozilla */
+          opacity: 0.9;
+          /* CSS3 */
+          min-width: 40%;
+          margin-left: 10%;
+          margin-right: 10%;
+          padding:3%;
+          font-size: 2vw;
+          position:relative;
+        }
+        .lugar .contenido{
+          display:flex;
+          flex-flow:row nowrap;
+        }
+        .imagen-principal img{
+          display:none;
+        }
+        .imagen-secundaria img{
+          display:flex;
+          flex-flow:row nowrap;
+          border-radius: 5vw;
+          float:right;
+          margin-left:10%;
+          margin-right:10%;
+          height:90%;
+        }
+        .descripcion{
+          display: block;
+          text-align:center;
+        }
+        .descripcion h2{
+          font-size:10vw;
+        }
+        .descripcion p{
+          font-size:3vw;
+        }
+      }
+
+      @media screen and (max-width: 480px){
+        header{
+          display:block;
+          text-align:center;
+        }
+        header h1 {
+          text-shadow: 2px 2px 0 #02010a;
+          font-size: 6vw;
+          text-align:center;
+          width: 100%;
+        }
+        nav {
+          display: flex;
+          flex-flow: row nowrap;
+        }
+        ul{
+          margin:0;
+          padding:0;
+          width:100%;
+          font-size:4vw;
+          list-style: none;
+        }
+        ul li{
+          display:inline;
+          text-align:center;
+          float:none;
+          padding: 2px;
+        }
+        .principal > .contenido {
+          background: #CCC;
+          filter: alpha(opacity=90);
+          /* IE */
+          -moz-opacity: 0.9;
+          /* Mozilla */
+          opacity: 0.9;
+          /* CSS3 */
+          min-width: 40%;
+          margin-left: 10%;
+          margin-right: 10%;
+          padding:3%;
+          font-size: 2vw;
+          position:relative;
+        }
+        .lugar .contenido{
+          display:block;
+        }
+        .imagen-principal img{
+          display:none;
+        }
+        .imagen-secundaria img{
+          display:flex;
+          flex-flow:row nowrap;
+          border-radius: 5vw;
+          max-width:60%;
+          float:none;
+          margin-left:20%;
+          margin-right:20%;
+        }
+        .descripcion{
+          display: block;
+          text-align:center;
+        }
+        .descripcion h2{
+          font-size:10vw;
+        }
+        .descripcion p{
+          font-size:3vw;
+        }
+        footer{
+          display:block;
+          width:100%;
+        }
+        .informacion{
+          float:none;
+          width:100%
+        }
+        .contacto{
+          float:none;
+          width:90%;
+        }
+      }
